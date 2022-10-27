@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&display=swap');
+
+*{margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+}
+
+header{
+        background-color: lightgreen;
+        width: auto;
+        height: auto;
+        margin: 0px;
+        padding: 0px;
+
+        .navbar{
+            color: black;
+            border: 6px solid black;
+            background-color: lightgreen;
+        }
+        .nav-link{
+            text-shadow: 1px 1px 5px red;
+            color: black;
+        }
+        .nav-link:hover{
+            color: blue;
+        }
+    }
+    main{
+        background-color: lightcyan;
+        .tituloPrincipal{
+            text-align: center;
+            font-size: 46px;
+            text-transform: capitalize;
+            font-family: 'Alumni Sans Collegiate One', sans-serif;
+            text-decoration: underline;
+        }
+        .titulo2Principal{
+            text-align: center;
+            font-size: 26px;
+            text-transform: capitalize;
+            font-family: 'Alumni Sans Collegiate One', sans-serif;
+        }
+        .parrafoPrincipal{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+            color: black;
+            margin: 0px;
+        }
+        .sec{
+            width: 50vh;
+        }
+        .carousel-indicators{
+            height: 100vh;
+            width: 100vh;
+            border-radius: 10px;
+            border: 2px solid aqua;
+        }
+    }
+
+
+    footer {
+        background-color: lightgreen;
+        color: black;
+        border: 10px solid black;
+        font-size: 22px;
+        width: auto;
+        height: auto;
+    }
+    footer h3 {
+        color: blue;
+        font-size: 22px;
+        font-style: normal;
+        text-decoration: underline;
+        font-weight: bolder;
+        text-shadow: 1px 1px 5px red;
+        font-family: "Kanit", sans-serif;
+        text-transform: capitalize;
+    }
+    footer h3::selection {
+        color: red;
+    }
+    footer #Instagram01,
+    footer #Whatsapp03,
+    footer #Facebook02 {
+        text-decoration: underline;
+        font-weight: bolder;
+        font-variant: normal;
+    }
+
+    .tituloContacto{
+        text-align: center;
+        font-size: 46px;
+        text-transform: capitalize;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-decoration: underline;
+    }
+    .tituloCotizacion{
+        text-align: center;
+        font-size: 46px;
+        text-transform: capitalize;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-decoration: underline;
+    }
+
+
