@@ -80,7 +80,7 @@ const empleadoUno = { id:01,
                     puesto: "Asesor Comercial.",
                     telefono: 1588234567,
                     descripcion: "Años de experiencia en el rubro automotor al servicio de la gente.",
-                    imagen: "./images/JuanRamonPerez.jpg"
+                    imagen: "./imagenes/JuanRamonPerez.jpg"
 }
 let articuloTarjeta = document.getElementById("tarjetaUno");
 
@@ -101,7 +101,7 @@ const empleadoDos = {   id:02,
                         puesto: "Asesora Comercial",
                         telefono: 1533445213,
                         descripcion: "Aseguro calidad en el servicio y buena atencion. Mi reputacion en el rubro automotor es intachable",
-                        imagen: "./images/JorgelinaMinuzzi.jpg"
+                        imagen: "./imagenes/JorgelinaMinuzzi.jpg"
 }
 let otroArticuloTarjeta = document.getElementById("tarjetaDos");
 

@@ -19,7 +19,6 @@ archivo.js
 
 ### Images ###
 # JPEG
-*.jpg
 *.jpeg
 *.jpe
 *.jif
