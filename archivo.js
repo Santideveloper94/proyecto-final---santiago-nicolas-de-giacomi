@@ -75,12 +75,12 @@ console.log(parsearAuto4);
 
 //Incorporo 2 cards con informacion de los empleados
 
-const empleadoUno = { id:01,
-    nombre: "Juan Ramon Perez",
-    puesto: "Asesor Comercial.",
-    telefono: 1588234567,
-    descripcion: "Años de experiencia en el rubro automotor al servicio de la gente.",
-    imagen:"./imagenes/JuanRamonPerez.jpg"
+const empleadoUno = {   id:01,
+                        nombre: "Juan Ramon Perez",
+                        puesto: "Asesor Comercial.",
+                        telefono: 1588234567,
+                        descripcion: "Años de experiencia en el rubro automotor al servicio de la gente.",
+                        imagen:"./imagenes/JuanRamonPerez.jpg"
 }
 let articuloTarjeta = document.getElementById("tarjetaUno");
 
@@ -96,11 +96,11 @@ articuloTarjeta.innerHTML = `
 </div>
 `
 const empleadoDos = {   id:02,
-        nombre: "Jorgelina Minuzzi",
-        puesto: "Asesora Comercial",
-        telefono: 1533445213,
-        descripcion: "Aseguro calidad en el servicio y buena atencion. Mi reputacion en el rubro automotor es intachable",
-        imagen:"./imagenes/JorgelinaMinuzzi.jpg"
+                        nombre: "Jorgelina Minuzzi",
+                        puesto: "Asesora Comercial",
+                        telefono: 1533445213,
+                        descripcion: "Aseguro calidad en el servicio y buena atencion. Mi reputacion en el rubro automotor es intachable",
+                        imagen:"./imagenes/JorgelinaMinuzzi.jpg"
 }
 let otroArticuloTarjeta = document.getElementById("tarjetaDos");
 
