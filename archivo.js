@@ -76,45 +76,53 @@ console.log(parsearAuto4);
 //Incorporo 2 cards con informacion de los empleados
 
 const empleadoUno = { id:01,
-                    nombre: "Juan Ramon Perez",
-                    puesto: "Asesor Comercial.",
-                    telefono: 1588234567,
-                    descripcion: "Años de experiencia en el rubro automotor al servicio de la gente.",
-                    imagen: "./imagenes/JuanRamonPerez.jpg"
+    nombre: "Juan Ramon Perez",
+    puesto: "Asesor Comercial.",
+    telefono: 1588234567,
+    descripcion: "Años de experiencia en el rubro automotor al servicio de la gente.",
+    imagen:"./imagenes/JuanRamonPerez.jpg"
 }
 let articuloTarjeta = document.getElementById("tarjetaUno");
 
 articuloTarjeta.innerHTML = `
-        <div>
-            <div id="tarjetaUno" class="card" style="width: 18rem;">
-                <img src="${empleadoUno.imagen}" class="card-img-top" alt="${empleadoUno.puesto}">
-                <div class="card-body">
-                    <h5 class="card-title">${empleadoUno.nombre}</h5>
-                    <p class="card-text">${empleadoUno.descripcion}</p>
-                    <p class="card-text"> Ante cualquier inconveniente mi numero de celular es: ${empleadoUno.telefono}</p>
-                    <a button="miBoton" class="btn btn-primary">Contactar</a>
-                </div>
-        </div>
+<div>
+<div id="tarjetaUno" class="card" style="width: 18rem;">
+<img src="${empleadoUno.imagen}" class="card-img-top" alt="${empleadoUno.puesto}">
+<div class="card-body">
+    <h5 class="card-title">${empleadoUno.nombre}</h5>
+    <p class="card-text">${empleadoUno.descripcion}</p>
+    <a button="miBoton" class="btn btn-primary">Contactar</a>
+</div>
+</div>
 `
 const empleadoDos = {   id:02,
-                        nombre: "Jorgelina Minuzzi",
-                        puesto: "Asesora Comercial",
-                        telefono: 1533445213,
-                        descripcion: "Aseguro calidad en el servicio y buena atencion. Mi reputacion en el rubro automotor es intachable",
-                        imagen: "./imagenes/JorgelinaMinuzzi.jpg"
+        nombre: "Jorgelina Minuzzi",
+        puesto: "Asesora Comercial",
+        telefono: 1533445213,
+        descripcion: "Aseguro calidad en el servicio y buena atencion. Mi reputacion en el rubro automotor es intachable",
+        imagen:"./imagenes/JorgelinaMinuzzi.jpg"
 }
 let otroArticuloTarjeta = document.getElementById("tarjetaDos");
 
 otroArticuloTarjeta.innerHTML = `
-            <div id="tarjetaDos" class="card" style="width: 18rem;">
-                <img src="${empleadoDos.imagen}" class="card-img-top" alt="${empleadoDos.puesto}">
-                <div class="card-body">
-                    <h5 class="card-title">${empleadoDos.nombre}</h5>
-                    <p class="card-text">${empleadoDos.descripcion}</p>
-                    <p class="card-text">Ante cualquier inconveniente mi numero de celular es: ${empleadoDos.telefono}</p>
-                    <a button="miBoton2" class="btn btn-primary">Contactar</a>
-                </div>
-            </div>
+<div id="tarjetaDos" class="card" style="width: 18rem;">
+<img src="${empleadoDos.imagen}" class="card-img-top" alt="${empleadoDos.puesto}">
+<div class="card-body">
+    <h5 class="card-title">${empleadoDos.nombre}</h5>
+    <p class="card-text">${empleadoDos.descripcion}</p>
+    <a button="miBoton2" class="btn btn-primary">Contactar</a>
+</div>
+</div>
 `;
+let miBoton = getElementById("miBoton");
+miBoton.addEventListener("click", contactarAsesor);
+function contactarAsesor(){
+alert("El telefono de Juan Ramon Perez es: 1588234567 ")
+}
 
+let miBoton2 = getElementById("miBoton2");
+miBoton.addEventListener("click", contactarAsesora);
+function contactarAsesora(){
+alert("El telefono de Jorgelina Minuzzi es: 1533445213")
+}
 
