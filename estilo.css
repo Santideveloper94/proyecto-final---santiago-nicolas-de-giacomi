@@ -36,14 +36,8 @@ main .tituloPrincipal {
   text-align: center;
   font-size: 46px;
   text-transform: capitalize;
-  font-family: "Alumni Sans Collegiate One", sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-decoration: underline;
-}
-main .titulo2Principal {
-  text-align: center;
-  font-size: 26px;
-  text-transform: capitalize;
-  font-family: "Alumni Sans Collegiate One", sans-serif;
 }
 main .parrafoPrincipal {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -67,12 +61,27 @@ main .carousel-indicators {
   margin: 0px;
 }
 
-.tituloUbicacion {
+.tituloUbicacion, .tituloVehiculos {
   text-align: center;
   font-size: 36px;
   text-transform: capitalize;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-decoration: underline;
+}
+
+.tituloPaginaVehiculos {
+  text-align: center;
+  font-size: 46px;
+  text-transform: capitalize;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-decoration: underline;
+}
+
+.parrafoPaginaVehiculos {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  color: black;
+  margin: 0px;
 }
 
 footer {
