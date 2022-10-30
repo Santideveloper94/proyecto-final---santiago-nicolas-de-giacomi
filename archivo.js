@@ -83,8 +83,8 @@ const empleadoUno = {   id:01,
                         imagen:"../imagenes/JuanRamonPerez.jpg"
 }
 let articuloTarjeta = document.getElementById("tarjetaUno");
-
-articuloTarjeta.innerHTML = `
+if(articuloTarjeta){
+    articuloTarjeta.innerHTML = `
 <div>
 <div id="tarjetaUno" class="card" style="width: 18rem;">
 <img src="${empleadoUno.imagen}" class="card-img-top" alt="${empleadoUno.puesto}">
@@ -95,6 +95,9 @@ articuloTarjeta.innerHTML = `
 </div>
 </div>
 `;
+}
+
+
 const empleadoDos = {   id:02,
                         nombre: "Jorgelina Minuzzi",
                         puesto: "Asesora Comercial",
@@ -103,28 +106,36 @@ const empleadoDos = {   id:02,
                         imagen:"../imagenes/jorMinuzzi.jpg"
 }
 let otroArticuloTarjeta = document.getElementById("tarjetaDos");
-
-otroArticuloTarjeta.innerHTML = `
-<div id="tarjetaDos" class="card" style="width: 18rem;">
-<img src="${empleadoDos.imagen}" class="card-img-top" alt="${empleadoDos.puesto}">
-<div class="card-body">
-    <h5 class="card-title">${empleadoDos.nombre}</h5>
-    <p class="card-text">${empleadoDos.descripcion}</p>
-    <a id="miBoton2" class="btn btn-primary">Contactar</a>
-</div>
-</div>
-`;
-let miBoton = document.getElementById("miBoton");
-miBoton.addEventListener("click", contactarAsesor);
-function contactarAsesor(){
-alert("El telefono de Juan Ramon Perez es: 1588234567 ")
+if(otroArticuloTarjeta){
+    otroArticuloTarjeta.innerHTML = `
+    <div id="tarjetaDos" class="card" style="width: 18rem;">
+    <img src="${empleadoDos.imagen}" class="card-img-top" alt="${empleadoDos.puesto}">
+    <div class="card-body">
+        <h5 class="card-title">${empleadoDos.nombre}</h5>
+        <p class="card-text">${empleadoDos.descripcion}</p>
+        <a id="miBoton2" class="btn btn-primary">Contactar</a>
+    </div>
+    </div>
+    `;
 }
+
+let miBoton = document.getElementById("miBoton");
+if(miBoton){
+    miBoton.addEventListener("click", contactarAsesor);
+    function contactarAsesor(){
+    alert("El telefono de Juan Ramon Perez es: 1588234567 ")
+    }
+}
+
 
 let miBoton2 = document.getElementById("miBoton2");
-miBoton2.addEventListener("click", contactarAsesora);
-function contactarAsesora(){
-alert("El telefono de Jorgelina Minuzzi es: 1533445213")
+if(miBoton2){
+    miBoton2.addEventListener("click", contactarAsesora);
+    function contactarAsesora(){
+    alert("El telefono de Jorgelina Minuzzi es: 1533445213")
+    }
 }
+
 
 //carrito para comprar cuatro autos.
 const volvoC30 = {  id:2233, 
@@ -161,18 +172,6 @@ const mazdaRx7 = {  id:2678,
 
 let tarjetaVolvo = document.getElementById("tarjetaVolvo");
 
-tarjetaVolvo.innerHTML = `
-<div id="tarjetaVolvo" class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Hola.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
+    
 
 
-
-
-
-`;
