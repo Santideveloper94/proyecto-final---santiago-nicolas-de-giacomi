@@ -136,5 +136,15 @@ header{
         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         text-decoration: underline;
     }
-
+    .cuerpoVenta{
+        background-color: lightcyan;
+        
+        .tituloVenta{
+            @extend .tituloContacto
+        }
+        .titulo2venta{
+            @extend .titulo3contacto
+        }
+    }
+    
 

@@ -94,7 +94,7 @@ articuloTarjeta.innerHTML = `
     <a id="miBoton" class="btn btn-primary">Contactar</a>
 </div>
 </div>
-`
+`;
 const empleadoDos = {   id:02,
                         nombre: "Jorgelina Minuzzi",
                         puesto: "Asesora Comercial",
@@ -126,3 +126,53 @@ function contactarAsesora(){
 alert("El telefono de Jorgelina Minuzzi es: 1533445213")
 }
 
+//carrito para comprar cuatro autos.
+const volvoC30 = {  id:2233, 
+                    marca: "Volvo", 
+                    imagen:"../imagenes/volvoBlanco.jpg",
+                    modelo: "c30", 
+                    color: "blanco", 
+                    precio: 60000, 
+                    año: 2010}
+
+const porscheCayenne = {    id:1155, 
+                            marca: "Porsche", 
+                            imagen: "../imagenes/porschecayenne.jpg",
+                            modelo: "Cayenne", 
+                            color: "gris metalico", 
+                            precio: 80000, 
+                            año: 2016}
+
+const fordMustang = {   id:5555, 
+                        marca: "Ford",
+                        imagen: "../imagenes/fordmustang.jpg", 
+                        modelo: "Mustang", 
+                        color: "azul", 
+                        precio: 100000, 
+                        año: 2005}
+
+const mazdaRx7 = {  id:2678, 
+                    marca: "Mazda", 
+                    imagen: "../imagenes/mazdarx7.jpg",
+                    modelo: "rx7", 
+                    color: "negro", 
+                    precio: 30000, 
+                    año: 1998}
+
+let tarjetaVolvo = document.getElementById("tarjetaVolvo");
+
+tarjetaVolvo.innerHTML = `
+<div id="tarjetaVolvo" class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Hola.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+
+
+
+
+
+`;

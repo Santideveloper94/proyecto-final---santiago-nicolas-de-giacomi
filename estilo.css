@@ -118,7 +118,7 @@ footer #Facebook02 {
   font-variant: normal;
 }
 
-.tituloContacto {
+.tituloContacto, .cuerpoVenta .tituloVenta {
   text-align: center;
   font-size: 46px;
   text-transform: capitalize;
@@ -126,7 +126,7 @@ footer #Facebook02 {
   text-decoration: underline;
 }
 
-.titulo3contacto, .titulo4contacto {
+.titulo3contacto, .cuerpoVenta .titulo2venta, .titulo4contacto {
   text-align: center;
   font-size: 36px;
   text-transform: capitalize;
@@ -140,6 +140,10 @@ footer #Facebook02 {
   text-transform: capitalize;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-decoration: underline;
+}
+
+.cuerpoVenta {
+  background-color: lightcyan;
 }
 
 /*# sourceMappingURL=estilo.css.map */
