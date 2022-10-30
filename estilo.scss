@@ -4,7 +4,9 @@
 padding: 0px;
 box-sizing: border-box;
 }
-
+.cuerpoPrincipal{
+    background-color: lightcyan;
+}
 header{
         background-color: lightgreen;
         width: auto;
@@ -55,16 +57,29 @@ header{
             border-radius: 10px;
             border: 2px solid aqua;
         }
-    }
-
-
-    footer {
+        }
+        .seccionUbicacion{
+            background-color: lightcyan;
+            padding:0px;
+            margin:0px;
+        }
+        .tituloUbicacion{
+            text-align: center;
+            font-size: 36px;
+            text-transform: capitalize;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-decoration: underline;
+        }
+    
+        footer {
         background-color: lightgreen;
         color: black;
         border: 10px solid black;
         font-size: 22px;
         width: auto;
         height: auto;
+        margin: 0px;
+        padding: 0px;
     }
     footer h3 {
         color: blue;
