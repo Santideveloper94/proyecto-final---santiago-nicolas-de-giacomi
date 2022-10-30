@@ -126,6 +126,14 @@ footer #Facebook02 {
   text-decoration: underline;
 }
 
+.titulo3contacto, .titulo4contacto {
+  text-align: center;
+  font-size: 36px;
+  text-transform: capitalize;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-decoration: underline;
+}
+
 .tituloCotizacion {
   text-align: center;
   font-size: 46px;
