@@ -191,7 +191,9 @@ if(miBotonVolvo){
         Swal.fire({
             title: '¿Desea adquirir un Volvo C30 Año 2010 Color Blanco?',
             text: "Esta a un paso de finalizar su compra",
-            icon: 'warning',
+            imageUrl: volvoC30.imagen,
+            imageWidth: 400,
+            imageHeight: 200,
             showCancelButton: true,
             confirmButtonColor: '#3085d6',
             cancelButtonColor: '#d33',
@@ -228,7 +230,9 @@ if(miBotonPorsche){
         Swal.fire({
             title: '¿Desea adquirir una Porsche Cayenne Año 2016 Color Gris Metalico?',
             text: "Esta a un paso de finalizar su compra",
-            icon: 'warning',
+            imageUrl: porscheCayenne.imagen,
+            imageWidth: 400,
+            imageHeight:200,
             showCancelButton: true,
             confirmButtonColor: '#3085d6',
             cancelButtonColor: '#d33',
@@ -266,7 +270,9 @@ if(miBotonMustang){
         Swal.fire({
             title: '¿Desea adquirir un Ford Mustang Año 2005 Color Azul?',
             text: "Esta a un paso de finalizar su compra",
-            icon: 'warning',
+            imageUrl: fordMustang.imagen,
+            imageWidth: 400,
+            imageHeight: 200,
             showCancelButton: true,
             confirmButtonColor: '#3085d6',
             cancelButtonColor: '#d33',
@@ -304,7 +310,9 @@ if(miBotonMazda){
         Swal.fire({
             title: '¿Desea adquirir un Mazda Rx7 Año 1998 Color Negro?',
             text: "Esta a un paso de finalizar su compra",
-            icon: 'warning',
+            imageUrl: mazdaRx7.imagen,
+            imageWidth: 400,
+            imageHeight: 200,
             showCancelButton: true,
             confirmButtonColor: '#3085d6',
             cancelButtonColor: '#d33',
