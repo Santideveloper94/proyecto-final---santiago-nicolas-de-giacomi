@@ -123,7 +123,7 @@ let miBoton = document.getElementById("miBoton");
 if(miBoton){
     miBoton.addEventListener("click", contactarAsesor);
     function contactarAsesor(){
-    alert("El telefono de Juan Ramon Perez es: 1588234567 ")
+    Swal.fire('El Telefono de Juan Ramon Perez es: 1588234567')
     }
 }
 
@@ -132,7 +132,7 @@ let miBoton2 = document.getElementById("miBoton2");
 if(miBoton2){
     miBoton2.addEventListener("click", contactarAsesora);
     function contactarAsesora(){
-    alert("El telefono de Jorgelina Minuzzi es: 1533445213")
+    Swal.fire('El Telefono de Jorgelina Minuzzi es: 1533445213')
     }
 }
 
@@ -188,7 +188,22 @@ let miBotonVolvo = document.getElementById("miBotonVolvo");
 if(miBotonVolvo){
     miBotonVolvo.addEventListener("click", agregarCarrito);
     function agregarCarrito(){
-        alert("Usted ha comprado un Volvo C30 color blanco, nos estaremos comunicando a la brevedad")
+        Swal.fire({
+            title: 'Desea adquirir un Volvo C30 Año 2010 Color Blanco?',
+            text: "Esta a un paso de finalizar su compra",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Si, Deseo Comprar!'
+            }).then((result) => {
+            if (result.isConfirmed) {
+                Swal.fire(
+                'Gracias por su compra!',
+                'Su pedido ha sido procesado',
+                )
+            }
+            })
         carrito.push(volvoC30);
         console.log(carrito);
     }
@@ -210,7 +225,22 @@ let miBotonPorsche = document.getElementById("miBotonPorsche");
 if(miBotonPorsche){
     miBotonPorsche.addEventListener("click", agregarCarrito);
     function agregarCarrito(){
-        alert("Usted ha comprado una Porsche Cayenne color gris metalico, nos estaremos comunicando a la brevedad")
+        Swal.fire({
+            title: 'Desea adquirir una Porsche Cayenne Año 2016 Color Gris Metalico?',
+            text: "Esta a un paso de finalizar su compra",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Si, Deseo Comprar!'
+            }).then((result) => {
+            if (result.isConfirmed) {
+                Swal.fire(
+                'Gracias por su compra!',
+                'Su pedido ha sido procesado',
+                )
+            }
+            })
         carrito.push(porscheCayenne);
         console.log(carrito);
     }
@@ -233,7 +263,22 @@ let miBotonMustang = document.getElementById("miBotonMustang");
 if(miBotonMustang){
     miBotonMustang.addEventListener("click", agregarCarrito);
     function agregarCarrito(){
-        alert("Usted ha comprado una Ford Mustang color azul, nos estaremos comunicando a la brevedad")
+        Swal.fire({
+            title: 'Desea adquirir un Ford Mustang Año 2005 Color Azul?',
+            text: "Esta a un paso de finalizar su compra",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Si, Deseo Comprar!'
+            }).then((result) => {
+            if (result.isConfirmed) {
+                Swal.fire(
+                'Gracias por su compra!',
+                'Su pedido ha sido procesado',
+                )
+            }
+            })
         carrito.push(fordMustang);
         console.log(carrito);
     }
@@ -256,7 +301,22 @@ let miBotonMazda = document.getElementById("miBotonMazda");
 if(miBotonMazda){
     miBotonMazda.addEventListener("click", agregarCarrito);
     function agregarCarrito(){
-        alert("Usted ha comprado una Mazda Rx7 color negro, nos estaremos comunicando a la brevedad")
+        Swal.fire({
+            title: 'Desea adquirir un Mazda Rx7 Año 1998 Color Negro?',
+            text: "Esta a un paso de finalizar su compra",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Si, Deseo Comprar!'
+            }).then((result) => {
+            if (result.isConfirmed) {
+                Swal.fire(
+                'Gracias por su compra!',
+                'Su pedido ha sido procesado',
+                )
+            }
+            })
         carrito.push(mazdaRx7);
         console.log(carrito);
     }
