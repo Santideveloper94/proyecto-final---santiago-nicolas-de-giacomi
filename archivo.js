@@ -172,18 +172,20 @@ const mazdaRx7 = {  id:2678,
                     año: 1998}
 
 let tarjetaVolvo = document.getElementById("tarjetaVolvo");
+if(tarjetaVolvo){
+    tarjetaVolvo.innerHTML = `
+    <div id="tarjetaVolvo" class="card" style="width: 18rem;">
+                <img src="${volvoC30.imagen}" class="card-img-top" alt="${volvoC30.modelo}">
+                <div class="card-body">
+                    <h5 class="card-title">${volvoC30.marca} ${volvoC30.modelo}</h5>
+                    <h6 class="card-title">Color en stock: ${volvoC30.color}</h6>
+                    <p class="card-text">La marca sueca Volvo en el año 2008 saco al mercado el modelo C30, un auto fino y elegante con todas las novedades tecnologicas del momento incorporadas para que el usuario disfrute al maximo de un andar como el solo merece.</p>
+                    <a id="miBotonVolvo" class="btn btn-primary">Comprar Vehiculo $ ${volvoC30.precio}</a>
+                    </div>
+                </div><br>
+    `;
+}
 
-tarjetaVolvo.innerHTML = `
-<div id="tarjetaVolvo" class="card" style="width: 18rem;">
-            <img src="${volvoC30.imagen}" class="card-img-top" alt="${volvoC30.modelo}">
-            <div class="card-body">
-                <h5 class="card-title">${volvoC30.marca} ${volvoC30.modelo}</h5>
-                <h6 class="card-title">Color en stock: ${volvoC30.color}</h6>
-                <p class="card-text">La marca sueca Volvo en el año 2008 saco al mercado el modelo C30, un auto fino y elegante con todas las novedades tecnologicas del momento incorporadas para que el usuario disfrute al maximo de un andar como el solo merece.</p>
-                <a id="miBotonVolvo" class="btn btn-primary">Comprar Vehiculo $ ${volvoC30.precio}</a>
-                </div>
-            </div><br>
-`;
 let miBotonVolvo = document.getElementById("miBotonVolvo");
 if(miBotonVolvo){
     miBotonVolvo.addEventListener("click", agregarCarrito);
@@ -211,18 +213,20 @@ if(miBotonVolvo){
     }
 }
 let tarjetaPorsche = document.getElementById("tarjetaPorsche");
+if(tarjetaPorsche){
+    tarjetaPorsche.innerHTML = `
+    <div id="tarjetaPorsche" class="card" style="width: 18rem;">
+                    <img src="${porscheCayenne.imagen}" class="card-img-top" alt="${porscheCayenne.modelo}">
+                    <div class="card-body">
+                        <h5 class="card-title">${porscheCayenne.marca} ${porscheCayenne.modelo}</h5>
+                        <h6 class="card-title">Color en stock: ${porscheCayenne.color}</h6>
+                        <p class="card-text">Camioneta altamente demandada en el mercado automotor. Un lujo que nos brinda la marca Porsche, con la excelencia que caracteriza a la empresa alemana, juntando alta gama, comodida, tecnologia y andar en un solo lugar, la Porsche Cayenne</p>
+                        <a id="miBotonPorsche" class="btn btn-primary">Comprar Vehiculo $ ${porscheCayenne.precio}</a>
+                        </div>
+                    </div><br>
+    `;
+}
 
-tarjetaPorsche.innerHTML = `
-<div id="tarjetaPorsche" class="card" style="width: 18rem;">
-                <img src="${porscheCayenne.imagen}" class="card-img-top" alt="${porscheCayenne.modelo}">
-                <div class="card-body">
-                    <h5 class="card-title">${porscheCayenne.marca} ${porscheCayenne.modelo}</h5>
-                    <h6 class="card-title">Color en stock: ${porscheCayenne.color}</h6>
-                    <p class="card-text">Camioneta altamente demandada en el mercado automotor. Un lujo que nos brinda la marca Porsche, con la excelencia que caracteriza a la empresa alemana, juntando alta gama, comodida, tecnologia y andar en un solo lugar, la Porsche Cayenne</p>
-                    <a id="miBotonPorsche" class="btn btn-primary">Comprar Vehiculo $ ${porscheCayenne.precio}</a>
-                    </div>
-                </div><br>
-`;
 let miBotonPorsche = document.getElementById("miBotonPorsche");
 if(miBotonPorsche){
     miBotonPorsche.addEventListener("click", agregarCarrito);
@@ -252,17 +256,20 @@ if(miBotonPorsche){
 
 let tarjetaMustang = document.getElementById("tarjetaMustang");
 
-tarjetaMustang.innerHTML = `
-<div id="tarjetaMustang" class="card" style="width: 18rem;">
-                    <img src="${fordMustang.imagen}" class="card-img-top" alt="${fordMustang.modelo}">
-                    <div class="card-body">
-                        <h5 class="card-title">${fordMustang.marca} ${fordMustang.modelo}</h5>
-                        <h6 class="card-title">Color en stock: ${fordMustang.color}</h6>
-                        <p class="card-text">Las palabras sobran cuando se trata de este clasico de la marca Ford. Deportividad y excelencia al servicio del usuario. Tope de gama</p>
-                        <a id="miBotonMustang" class="btn btn-primary">Comprar Vehiculo $ ${fordMustang.precio}</a>
-                        </div>
-                    </div><br>
-`;
+if(tarjetaMustang){
+    tarjetaMustang.innerHTML = `
+    <div id="tarjetaMustang" class="card" style="width: 18rem;">
+                        <img src="${fordMustang.imagen}" class="card-img-top" alt="${fordMustang.modelo}">
+                        <div class="card-body">
+                            <h5 class="card-title">${fordMustang.marca} ${fordMustang.modelo}</h5>
+                            <h6 class="card-title">Color en stock: ${fordMustang.color}</h6>
+                            <p class="card-text">Las palabras sobran cuando se trata de este clasico de la marca Ford. Deportividad y excelencia al servicio del usuario. Tope de gama</p>
+                            <a id="miBotonMustang" class="btn btn-primary">Comprar Vehiculo $ ${fordMustang.precio}</a>
+                            </div>
+                        </div><br>
+    `;
+}
+
 let miBotonMustang = document.getElementById("miBotonMustang");
 if(miBotonMustang){
     miBotonMustang.addEventListener("click", agregarCarrito);
@@ -292,17 +299,20 @@ if(miBotonMustang){
 
 let tarjetaMazda = document.getElementById("tarjetaMazda");
 
-tarjetaMazda.innerHTML = `
-<div id="tarjetaMazda" class="card" style="width: 18rem;">
-                <img src="${mazdaRx7.imagen}" class="card-img-top" alt="${mazdaRx7.modelo}">
-                <div class="card-body">
-                    <h5 class="card-title">${mazdaRx7.marca} ${mazdaRx7.modelo}</h5>
-                    <h6 class="card-title">Color en stock: ${mazdaRx7.color}</h6>
-                    <p class="card-text">Un clasico noventoso de la marca japonesa ideal para coleccionistas. Una maquina resistente al paso del tiempo.</p>
-                    <a id="miBotonMazda" class="btn btn-primary">Comprar Vehiculo $ ${mazdaRx7.precio}</a>
-                    </div>
-                </div><br>
-`;
+if(tarjetaMazda){
+    tarjetaMazda.innerHTML = `
+    <div id="tarjetaMazda" class="card" style="width: 18rem;">
+                    <img src="${mazdaRx7.imagen}" class="card-img-top" alt="${mazdaRx7.modelo}">
+                    <div class="card-body">
+                        <h5 class="card-title">${mazdaRx7.marca} ${mazdaRx7.modelo}</h5>
+                        <h6 class="card-title">Color en stock: ${mazdaRx7.color}</h6>
+                        <p class="card-text">Un clasico noventoso de la marca japonesa ideal para coleccionistas. Una maquina resistente al paso del tiempo.</p>
+                        <a id="miBotonMazda" class="btn btn-primary">Comprar Vehiculo $ ${mazdaRx7.precio}</a>
+                        </div>
+                    </div><br>
+    `;
+}
+
 let miBotonMazda = document.getElementById("miBotonMazda");
 if(miBotonMazda){
     miBotonMazda.addEventListener("click", agregarCarrito);
