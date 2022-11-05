@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&display=swap');
+@import url("./parciales/_contacto.scss");
+@import url("./parciales/_cotizacion.scss");
+
+header{
+    background-color: lightgreen;
+    width: auto;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+
+    .navbar{
+        color: black;
+        border: 6px solid black;
+        background-color: lightgreen;
+    }
+    .nav-link{
+        text-shadow: 1px 1px 5px red;
+        color: black;
+    }
+    .nav-link:hover{
+        color: blue;
+    }
+}
+.cuerpoVenta{
+    background-color: lightcyan;
+    
+    .tituloVenta{
+        @extend .tituloContacto
+    }
+    .titulo2venta{
+        @extend .titulo3contacto
+    }
+}
+
+footer {
+    background-color: lightgreen;
+    color: black;
+    border: 10px solid black;
+    font-size: 22px;
+    width: auto;
+    height: auto;
+}
+footer h3 {
+    color: blue;
+    font-size: 22px;
+    font-style: normal;
+    text-decoration: underline;
+    font-weight: bolder;
+    text-shadow: 1px 1px 5px red;
+    font-family: "Kanit", sans-serif;
+    text-transform: capitalize;
+}
+footer h3::selection {
+    color: red;
+}
+footer #Instagram01,
+footer #Whatsapp03,
+footer #Facebook02 {
+    text-decoration: underline;
+    font-weight: bolder;
+    font-variant: normal;
+}
