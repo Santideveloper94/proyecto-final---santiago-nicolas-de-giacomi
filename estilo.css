@@ -118,6 +118,10 @@ footer #Facebook02 {
   font-variant: normal;
 }
 
+.cuerpoContacto {
+  background-color: lightcyan;
+}
+
 .tituloContacto, .cuerpoVenta .tituloVenta {
   text-align: center;
   font-size: 46px;
@@ -126,7 +130,7 @@ footer #Facebook02 {
   text-decoration: underline;
 }
 
-.titulo3contacto, .cuerpoVenta .titulo2venta, .titulo4contacto {
+.titulo1contacto, .cuerpoVenta .titulo2venta, .titulo4contacto {
   text-align: center;
   font-size: 36px;
   text-transform: capitalize;

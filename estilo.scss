@@ -111,7 +111,9 @@ header{
         font-weight: bolder;
         font-variant: normal;
     }
-
+    .cuerpoContacto{
+        background-color: lightcyan;
+    }
     .tituloContacto{
         text-align: center;
         font-size: 46px;
@@ -119,7 +121,7 @@ header{
         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         text-decoration: underline;
     }
-    .titulo3contacto{
+    .titulo1contacto{
             text-align: center;
             font-size: 36px;
             text-transform: capitalize;
@@ -127,7 +129,7 @@ header{
             text-decoration: underline;
     }
     .titulo4contacto{
-        @extend .titulo3contacto
+        @extend .titulo1contacto
     }
     .tituloCotizacion{
         text-align: center;
@@ -143,7 +145,7 @@ header{
             @extend .tituloContacto
         }
         .titulo2venta{
-            @extend .titulo3contacto
+            @extend .titulo1contacto
         }
     }
     
