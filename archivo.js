@@ -17,14 +17,12 @@ function renderizarVehiculos(){
         
         `;
     }
-
     vehiculosEnVenta.forEach((vehiculo)=>{
         document.getElementById(`btn ${vehiculo.id}`).addEventListener("click", function(){
             agregarAlCarrito(vehiculo);
         })
     } )
 }
-
 function agregarAlCarrito(vehiculoAComprar){
     carrito.push(vehiculoAComprar);
     document.getElementById("tablaBody").innerHTML += `
@@ -57,8 +55,8 @@ function agregarAlCarrito(vehiculoAComprar){
         })
 }
 
-let articuloTarjetaUno = document.getElementById("tarjetaUno");
-articuloTarjetaUno.innerHTML = `
+let tarjetaUno = document.getElementById("tarjetaUno");
+tarjetaUno.innerHTML = `
     <div class="card" style="width: 18rem;">
         <img src="${empleadoUno.imagen}" class="card-img-top" alt="${empleadoUno.puesto}">
     <div class="card-body">
@@ -69,28 +67,27 @@ articuloTarjetaUno.innerHTML = `
     </div>
     </div>
 `;
-let boton1 = document.getElementById("Boton1");
-
-let primerBoton = document.addEventListener("click", contactarAsesor);
+let miBoton = document.getElementById("Boton1");
+miBoton.addEventListener("click", contactarAsesor)
 function contactarAsesor(){
-    Swal.fire("El numero de telefono de Juan Ramon es: 1588234567")
+    alert("hola")
 }
 
-let articuloTarjetaDos = document.getElementById("tarjetaDos");
-articuloTarjetaDos.innerHTML = `
-<div class="card" style="width: 18rem;">
-        <img src="${empleadoDos.imagen}" class="card-img-top" alt="${empleadoDos.puesto}">
-    <div class="card-body">
-        <h5 class="card-title">${empleadoDos.nombre}</h5>
-        <h5 class="card-title">${empleadoDos.puesto}</h5>
-        <p class="card-text">${empleadoDos.descripcion}</p>
-        <a button="Boton1" class="btn btn-primary">Contactar</a>
-    </div>
-    </div>
+let tarjetaDos = document.getElementById("tarjetaDos");
+tarjetaDos.innerHTML = `
+        <div class="card" style="width: 18rem;">
+                <img src="${empleadoDos.imagen}" class="card-img-top" alt="${empleadoDos.puesto}">
+            <div class="card-body">
+                <h5 class="card-title">${empleadoDos.nombre}</h5>
+                <h5 class="card-title">${empleadoDos.puesto}</h5>
+                <p class="card-text">${empleadoDos.descripcion}</p>
+                <a button="Boton1" class="btn btn-primary">Contactar</a>
+            </div>
+            </div>
 `;
-let boton2 = document.getElementById("Boton2");
 
-let segundoBoton = document.addEventListener("click, contactarAsesora");
+let miBoton2 = document.getElementById("tarjetaDos");
+miBoton2.addEventListener("click", contactarAsesora)
 function contactarAsesora(){
-    Swal.fire('El telefono de Jorgelina es: 1533445213')
+    alert("hola")
 }
