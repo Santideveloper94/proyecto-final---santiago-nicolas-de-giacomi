@@ -52,3 +52,20 @@ const vehiculosEnVenta = [{
                 anio: 1998
 }
 ]
+const objetoAjson = JSON.stringify(empleadoUno);
+localStorage.setItem("empleado", objetoAjson);
+
+const traidoDelStorage = localStorage.getItem("empleado");
+const parsearObjeto = JSON.parse(traidoDelStorage);
+
+const objetoDosAjson = JSON.stringify(empleadoDos);
+localStorage.setItem("empleada", objetoDosAjson);
+
+const traidoDelStorageDos = localStorage.getItem("empleada");
+const parsearObjetoDos = JSON.parse(traidoDelStorageDos);
+
+const guardarLocal = (clave,valor) => {localStorage.setItem(clave,valor)};
+guardarLocal("lista vehiculos", JSON.stringify(vehiculosEnVenta));
+
+
+
