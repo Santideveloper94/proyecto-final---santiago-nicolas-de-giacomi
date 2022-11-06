@@ -1,6 +1,6 @@
 let tarjetaUno = document.getElementById("primerTarjeta");
 tarjetaUno.innerHTML = `
-        <div id="primerTarjeta" class="card" style="width: 18rem;">
+        <div id="primerTarjeta" class="card col-md-2" style="width: 18rem;">
                         <img src="${empleadoUno.imagen}" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">${empleadoUno.nombre}</h5>
@@ -18,7 +18,7 @@ function contactarAsesor(){
 
 let tarjetaDos = document.getElementById("segundaTarjeta");
 tarjetaDos.innerHTML = `
-            <div id="segundaTarjeta" class="card" style="width: 18rem;">
+            <div id="segundaTarjeta" class="card col-md-2" style="width: 18rem;">
                 <img src="${empleadoDos.imagen}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">${empleadoDos.nombre}</h5>
