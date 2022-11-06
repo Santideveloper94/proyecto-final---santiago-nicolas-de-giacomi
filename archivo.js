@@ -24,7 +24,6 @@ function renderizarVehiculos(){
         })
     } )
 }
-renderizarVehiculos();
 
 function agregarAlCarrito(vehiculoAComprar){
     carrito.push(vehiculoAComprar);
@@ -56,4 +55,42 @@ function agregarAlCarrito(vehiculoAComprar){
             )
             }
         })
+}
+
+let articuloTarjetaUno = document.getElementById("tarjetaUno");
+articuloTarjetaUno.innerHTML = `
+    <div class="card" style="width: 18rem;">
+        <img src="${empleadoUno.imagen}" class="card-img-top" alt="${empleadoUno.puesto}">
+    <div class="card-body">
+        <h5 class="card-title">${empleadoUno.nombre}</h5>
+        <h5 class="card-title">${empleadoUno.puesto}</h5>
+        <p class="card-text">${empleadoUno.descripcion}</p>
+        <a button="Boton1" class="btn btn-primary">Contactar</a>
+    </div>
+    </div>
+`;
+let boton1 = document.getElementById("Boton1");
+
+let primerBoton = document.addEventListener("click", contactarAsesor);
+function contactarAsesor(){
+    Swal.fire("El numero de telefono de Juan Ramon es: 1588234567")
+}
+
+let articuloTarjetaDos = document.getElementById("tarjetaDos");
+articuloTarjetaDos.innerHTML = `
+<div class="card" style="width: 18rem;">
+        <img src="${empleadoDos.imagen}" class="card-img-top" alt="${empleadoDos.puesto}">
+    <div class="card-body">
+        <h5 class="card-title">${empleadoDos.nombre}</h5>
+        <h5 class="card-title">${empleadoDos.puesto}</h5>
+        <p class="card-text">${empleadoDos.descripcion}</p>
+        <a button="Boton1" class="btn btn-primary">Contactar</a>
+    </div>
+    </div>
+`;
+let boton2 = document.getElementById("Boton2");
+
+let segundoBoton = document.addEventListener("click, contactarAsesora");
+function contactarAsesora(){
+    Swal.fire('El telefono de Jorgelina es: 1533445213')
 }

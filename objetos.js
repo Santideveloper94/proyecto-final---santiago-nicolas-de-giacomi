@@ -1,19 +1,20 @@
-const empleadosConcesionaria = [{   
-                    id:01,
-                    nombre: "Juan Ramon Perez",
-                    puesto: "Asesor Comercial.",
-                    telefono: 1588234567,
-                    descripcion: "Años de experiencia en el rubro automotor al servicio de la gente.",
-                    imagen:"../imagenes/JuanRamonPerez.jpg"
-},
-{                   id:02,
-                    nombre: "Jorgelina Minuzzi",
-                    puesto: "Asesora Comercial",
-                    telefono: 1533445213,
-                    descripcion: "Aseguro calidad en el servicio y buena atencion. Mi reputacion en el rubro automotor es intachable",
-                    imagen:"../imagenes/jorMinuzzi.jpg"
-}
-]
+const empleadoUno = {   
+    id:01,
+    nombre: "Juan Ramon Perez",
+    puesto: "Asesor Comercial.",
+    telefono: 1588234567,
+    descripcion: "Años de experiencia en el rubro automotor al servicio de la gente.",
+    imagen:"../imagenes/JuanRamonPerez.jpg"
+};
+const empleadoDos = {
+    id:02,
+    nombre: "Jorgelina Minuzzi",
+    puesto: "Asesora Comercial",
+    telefono: 1533445213,
+    descripcion: "Aseguro calidad en el servicio y buena atencion. Mi reputacion en el rubro automotor es intachable.",
+    imagen:"../imagenes/jorMinuzzi.jpg"
+};
+
 const vehiculosEnVenta = [{
                 id:2233, 
                 marca: "Volvo", 
