@@ -23,6 +23,7 @@ function renderizarVehiculos(){
         })
     } )
 }
+renderizarVehiculos();
 function agregarAlCarrito(vehiculoAComprar){
     carrito.push(vehiculoAComprar);
     document.getElementById("tablaBody").innerHTML += `
@@ -53,41 +54,4 @@ function agregarAlCarrito(vehiculoAComprar){
             )
             }
         })
-}
-
-let tarjetaUno = document.getElementById("tarjetaUno");
-tarjetaUno.innerHTML = `
-    <div class="card" style="width: 18rem;">
-        <img src="${empleadoUno.imagen}" class="card-img-top" alt="${empleadoUno.puesto}">
-    <div class="card-body">
-        <h5 class="card-title">${empleadoUno.nombre}</h5>
-        <h5 class="card-title">${empleadoUno.puesto}</h5>
-        <p class="card-text">${empleadoUno.descripcion}</p>
-        <a button="Boton1" class="btn btn-primary">Contactar</a>
-    </div>
-    </div>
-`;
-let miBoton = document.getElementById("Boton1");
-miBoton.addEventListener("click", contactarAsesor)
-function contactarAsesor(){
-    alert("hola")
-}
-
-let tarjetaDos = document.getElementById("tarjetaDos");
-tarjetaDos.innerHTML = `
-        <div class="card" style="width: 18rem;">
-                <img src="${empleadoDos.imagen}" class="card-img-top" alt="${empleadoDos.puesto}">
-            <div class="card-body">
-                <h5 class="card-title">${empleadoDos.nombre}</h5>
-                <h5 class="card-title">${empleadoDos.puesto}</h5>
-                <p class="card-text">${empleadoDos.descripcion}</p>
-                <a button="Boton1" class="btn btn-primary">Contactar</a>
-            </div>
-            </div>
-`;
-
-let miBoton2 = document.getElementById("tarjetaDos");
-miBoton2.addEventListener("click", contactarAsesora)
-function contactarAsesora(){
-    alert("hola")
 }
