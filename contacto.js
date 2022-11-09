@@ -1,3 +1,4 @@
+//Se traen cards del HTML con el uso del DOM (a traves del getElementById) en este caso del primer empleado para que el usuario pueda contactarse con el mismo. Luego se usan eventos, en este caso del mouse ("click") para darle funcionalidad al boton de contactar. Hay tambien uso de librerias, en este caso sweet alert, para darle otra estetica al boton.
 let tarjetaUno = document.getElementById("primerTarjeta");
 tarjetaUno.innerHTML = `
         <div id="primerTarjeta" class="card col-md-2" style="width: 18rem;">
@@ -15,7 +16,7 @@ botonUno.addEventListener("click",contactarAsesor);
 function contactarAsesor(){
     Swal.fire('El numero de telefono de Juan Ramon es: 1588234567')
 }
-
+//Se traen cards del HTML con el uso del DOM (a traves del getElementById) en este caso del segundo empleado para que el usuario pueda contactarse con el mismo. Luego se usan eventos, en este caso del mouse ("click") para darle funcionalidad al boton de contactar. Hay tambien uso de librerias, en este caso sweet alert, para darle otra estetica al boton.
 let tarjetaDos = document.getElementById("segundaTarjeta");
 tarjetaDos.innerHTML = `
             <div id="segundaTarjeta" class="card col-md-2" style="width: 18rem;">

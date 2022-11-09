@@ -1,3 +1,4 @@
+//Aqui van los objetos con los que se trabaja en el proyecto, en este caso los empleados.
 const empleadoUno = {   
     id:01,
     nombre: "Juan Ramon Perez",
@@ -14,7 +15,7 @@ const empleadoDos = {
     descripcion: "Aseguro calidad en el servicio y buena atencion. Mi reputacion en el rubro automotor es intachable.",
     imagen:"../imagenes/jorMinuzzi.jpg"
 };
-
+//Aqui se crea un array de objetos con una constante llamada vehiculosEnVenta y alli dentro van cada uno de los objetos separados por llaves.
 const vehiculosEnVenta = [{
                 id:2233, 
                 marca: "Volvo", 
@@ -52,6 +53,7 @@ const vehiculosEnVenta = [{
                 anio: 1998
 }
 ]
+//Aqui se utiliza el JSON para convertir el objeto a string con el stringify y luego se trae ese elemento de vuelta y se lo transforma en un objeto a traves del JSON.parse. Ademas se hace uso de los almacenamientos (local storage).
 const objetoAjson = JSON.stringify(empleadoUno);
 localStorage.setItem("empleado", objetoAjson);
 

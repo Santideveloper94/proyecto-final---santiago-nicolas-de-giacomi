@@ -1,6 +1,7 @@
+//Para crear el carrito previamente creo la constante carrito (es constante asi puede ser reutilizada en cualquier momento dentro del codigo), es un array vacio, por eso los corchetes sin contenido dentro.
 const carrito = [];
+//Creo una funcion para renderizar y luego recorro el array de objetos con un for of. En primer termino llame del HTML al JS al id "vehiculosVentas" dandole el nombre a la variable de contenedor.
 let contenedor = document.getElementById("vehiculosVenta");
-
 function renderizarVehiculos(){
     for(const vehiculo of vehiculosEnVenta){
         contenedor.innerHTML += `
@@ -24,6 +25,7 @@ function renderizarVehiculos(){
     } )
 }
 renderizarVehiculos();
+//Creo funcion agregarAlCarrito para crear el carrito y luego pusheo los objetos con carrito.push. Traigo elementos del HTML con el uso del DOM a traves del getElementById.
 function agregarAlCarrito(vehiculoAComprar){
     carrito.push(vehiculoAComprar);
     document.getElementById("tablaBody").innerHTML += `
