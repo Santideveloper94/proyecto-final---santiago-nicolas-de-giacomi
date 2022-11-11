@@ -1,5 +1,5 @@
 {
-  "name": "tercera-pre-entrega---santiago-nicolas-de-giacomi-(javascript)",
+  "name": "tercera-pre-entrega---santiago-nicolas-de-giacomi",
   "version": "1.0.0",
   "description": "",
   "main": "carrito.js",
@@ -8,13 +8,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Santideveloper94/trabajando-con-JavaScript.git"
+    "url": "git+https://github.com/Santideveloper94/proyecto-final---santiago-nicolas-de-giacomi.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Santideveloper94/trabajando-con-JavaScript/issues"
+    "url": "https://github.com/Santideveloper94/proyecto-final---santiago-nicolas-de-giacomi/issues"
   },
-  "homepage": "https://github.com/Santideveloper94/trabajando-con-JavaScript#readme"
+  "homepage": "https://github.com/Santideveloper94/proyecto-final---santiago-nicolas-de-giacomi#readme"
 }
