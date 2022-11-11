@@ -35,8 +35,7 @@ function agregarAlCarrito(vehiculoAComprar){
         <td>${vehiculoAComprar.modelo}</td>
         <td>$ ${vehiculoAComprar.precio}</td>
         <td>${vehiculoAComprar.color}</td>
-        <td>${vehiculoAComprar.anio}</td>
-        <td><button class="btn btn-light" onclick="eliminar(event)">🗑️</button></td>                  
+        <td>${vehiculoAComprar.anio}</td>                
     </tr>
     `;
     let totalCarrito = carrito.reduce((acumulador, vehi)=> acumulador + vehi.precio,0);
