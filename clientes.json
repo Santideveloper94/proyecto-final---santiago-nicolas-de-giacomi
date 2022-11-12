@@ -1,0 +1,73 @@
+{
+    "clientes": [{
+                "Id": 1,
+                "Nombre": "Rodolfo",
+                "Apellido": "Gonzalez",
+                "Edad": 63,
+                "Antiguedad": 5,
+                "Auto": "Chevrolet Camaro"},
+    
+                {"Id": 2,
+                "Nombre": "Agustin",
+                "Apellido": "Raymonda",
+                "Edad": 24,
+                "Antiguedad": 3,
+                "Auto": "Ford Fiesta RS"},
+    
+                {"Id": 3,
+                "Nombre": "Jose",
+                "Apellido": "Sosa",
+                "Edad": 48,
+                "Antiguedad": 22,
+                "Auto": "Toyota Etios"},
+    
+                {"Id": 4,
+                "Nombre": "Matias",
+                "Apellido": "Palladino",
+                "Edad": 36,
+                "Antiguedad": 6,
+                "Auto": "Honda Civic"},
+
+                {"Id": 5,
+                "Nombre": "Hugo",
+                "Apellido": "Mazzacane",
+                "Edad": 76,
+                "Antiguedad": 11,
+                "Auto": "Porsche 911"},
+
+                {"Id": 6,
+                "Nombre": "Christian",
+                "Apellido": "Salas",
+                "Edad": 46,
+                "Antiguedad": 15,
+                "Auto": "Honda CRV"},
+
+                {"Id": 7,
+                "Nombre": "Rogelio",
+                "Apellido": "Buendia",
+                "Edad": 56,
+                "Antiguedad": 2,
+                "Auto": "Hyundai Veloster"},
+
+                {"Id": 8,
+                "Nombre": "Cristiano",
+                "Apellido": "Ratazzi",
+                "Edad":70,
+                "Antiguedad": 50,
+                "Auto": "Fiat Abarth"},
+
+                {"Id": 9,
+                "Nombre": "Miguel Angel",
+                "Apellido": "Romero",
+                "Edad": 55,
+                "Antiguedad": 30,
+                "Auto": "Volvo C30"},
+
+                {"Id": 10,
+                "Nombre": "Silvia",
+                "Apellido": "Russo",
+                "Edad": 39,
+                "Antiguedad": 20,
+                "Auto": "Renault Sandero"}
+    ]
+}

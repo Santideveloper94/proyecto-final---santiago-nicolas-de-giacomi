@@ -149,5 +149,24 @@ footer #Facebook02 {
 .cuerpoVenta {
   background-color: lightcyan;
 }
+.cuerpoClientes {
+  background-color: lightcyan;
+}
+
+.cliente1Titulo {
+  text-align: center;
+  font-size: 46px;
+  text-transform: capitalize;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-decoration: underline;
+}
+
+.tituloClientes {
+  text-align: center;
+  font-size: 36px;
+  text-transform: capitalize;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-decoration: underline;
+}
 
 /*# sourceMappingURL=estilo.css.map */
