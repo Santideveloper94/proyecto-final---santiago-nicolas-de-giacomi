@@ -11,7 +11,7 @@ function renderizarVehiculos(){
                     <h5 class="card-title">${vehiculo.marca} ${vehiculo.modelo}</h5>
                     <p class="card-text">${vehiculo.color}</p>
                     <p class="card-text">${vehiculo.id}</p>
-                    <p class="card-text">$ ${vehiculo.precio}</p>
+                    <p class="card-text">U$D ${vehiculo.precio}</p>
                     <button id="btn ${vehiculo.id}" class="btn btn-primary">Comprar</button>
                 </div>
             </div>
