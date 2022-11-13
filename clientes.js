@@ -1,4 +1,4 @@
-// Cargo datos desde un JSON local (clientes.json) y uso metodo GET
+// Cargo datos desde un JSON local (clientes.json) y uso metodo GET. Manejo de promesas con fetch.
 function obtenerDatosJson(){
     const URLJSON = "/clientes.json"
     fetch(URLJSON)
