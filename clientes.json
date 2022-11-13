@@ -68,6 +68,22 @@
                 "Apellido": "Russo",
                 "Edad": 39,
                 "Antiguedad": 20,
-                "Auto": "Renault Sandero"}
+                "Auto": "Renault Sandero"},
+
+                {"Id": 11,
+                "Nombre": "Ruben",
+                "Apellido": "Alcaraz",
+                "Edad": 49,
+                "Antiguedad": 10,
+                "Auto": "Mercedes Clase A"  
+                },
+
+                {"Id": 12,
+                "Nombre": "Cinthia",
+                "Apellido": "Gomez",
+                "Edad": 25,
+                "Antiguedad": 5,
+                "Auto": "Fiat Cronos"  
+                }
     ]
 }
