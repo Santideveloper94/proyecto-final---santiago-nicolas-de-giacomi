@@ -1,0 +1,62 @@
+{
+    "cotizaciones": [{  "Modelo": 2000,
+                        "Origen": "Europa",
+                        "Tipo": "Auto cuatro puertas",
+                        "Valuacion": 4000000 },
+        
+                        {"Modelo": 2010,
+                        "Origen": "Asia",
+                        "Tipo": "Auto dos puertas",
+                        "Valuacion": 8000000 },
+                
+                        {"Modelo": 2020,
+                        "Origen": "Estados Unidos",
+                        "Tipo": "Camioneta todo terreno",
+                        "Valuacion": 10000000},
+
+                        {"Modelo": 2020,
+                        "Origen": "Mexico",
+                        "Tipo": "Camioneta SUV",
+                        "Valuacion": 8000000},
+
+                        {"Modelo": 1995,
+                        "Origen": "Japon",
+                        "Tipo": "Auto deportivo dos puertas",
+                        "Valuacion": 2000000},
+
+                        {"Modelo": 2006,
+                        "Origen": "Alemania",
+                        "Tipo": "Auto deportivo dos puertas",
+                        "Valuacion": 30000000},
+
+                        {"Modelo": 2001,
+                        "Origen": "Japon",
+                        "Tipo": "Auto deportivo cuatro puertas",
+                        "Valuacion": 50000000},
+
+                        {"Modelo": 2016,
+                        "Origen": "Suecia",
+                        "Tipo": "Auto cuatro puertas",
+                        "Valuacion": 11000000},
+                        
+                        {"Modelo": 2022,
+                        "Origen": "Europa",
+                        "Tipo": "Auto dos puertas",
+                        "Valuacion": 21000000},
+                        
+                        {"Modelo": 2011,
+                        "Origen": "Asia",
+                        "Tipo": "Auto cuatro puertas",
+                        "Valuacion": 9000000},
+
+                        {"Modelo": 2018,
+                        "Origen": "Brasil",
+                        "Tipo": "Auto cuatro puertas",
+                        "Valuacion": 7000000},
+
+                        {"Modelo": 2009,
+                        "Origen": "Estados Unidos",
+                        "Tipo": "Camioneta SUV",
+                        "Valuacion": 5000000}
+                ]
+}

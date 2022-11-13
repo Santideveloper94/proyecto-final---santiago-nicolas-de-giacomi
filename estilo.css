@@ -118,7 +118,7 @@ footer #Facebook02 {
   font-variant: normal;
 }
 
-.cuerpoContacto {
+.cuerpoContacto, .cuerpoCotizacion {
   background-color: lightcyan;
 }
 
@@ -161,7 +161,7 @@ footer #Facebook02 {
   text-decoration: underline;
 }
 
-.tituloClientes {
+.tituloClientes, .titulo2Cotizacion {
   text-align: center;
   font-size: 36px;
   text-transform: capitalize;
