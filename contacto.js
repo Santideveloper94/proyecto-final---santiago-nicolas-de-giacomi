@@ -35,64 +35,30 @@ function contactarAsesora(){
     Swal.fire('El numero de telefono de Jorgelina es: 1533445213')
 }
 //Validacion del formulario de la pagina contactos.
-const nombre = document.getElementById("nombre");
-const apellido = document.getElementById("apellido");
-const telefono = document.getElementById("telefono");
-const correo = document.getElementById("correo");
-const contraseña = document.getElementById("password");
-const fila = document.getElementById("file");
-
-function enviarFormulario(){
-    if(nombre.value === null || nombre.value === ""){
+const validarFormulario = () => {
+    let nombre = document.getElementById("nombre");
+    let apellido = document.getElementById("apellido");
+    let telefono = document.getElementById("telefono");
+    let correo = document.getElementById("correo");
+    let contraseña = document.getElementById("contraseña");
+    let fila = document.getElementById("file");
+    if(nombre == "" || !isNaN(nombre) || nombre == null || apellido == "" || !isNaN(apellido) || apellido == null || telefono == "" || telefono == "" || correo == "" || !isNaN(correo) || correo == null || contraseña == "" || contraseña == null || fila == "" || !isNaN(fila) || fila == null) {
         Swal.fire({
             icon: 'error',
-            title: 'Algo salio mal!',
-            text: 'Por favor ingrese su nombre!',
-            footer: '<a href="">Que esta sucediendo?</a>'
+            title: 'Algo salio mal',
+            text: 'Debes completar todos los campos!',
+            footer: '<a href="">Porque tengo este problema?</a>'
         })
+    } else{
+        let usuario = {
+            nombre: nombre,
+            apellido: apellido,
+            telefono: telefono,
+            correo: correo,
+            contraseña: contraseña,
+            fila: fila,
+        };
+        const objetoUsuario = JSON.stringify(usuario);
+        localStorage.setItem(objetoUsuario);
     }
-    if(apellido.value === null || apellido.value === ""){
-        Swal.fire({
-            icon: 'error',
-            title: 'Algo salio mal!',
-            text: 'Por favor ingrese su nombre!',
-            footer: '<a href="">Que esta sucediendo?</a>'
-        })
-    }
-    if(telefono.value === null || telefono.value === ""){
-        Swal.fire({
-            icon: 'error',
-            title: 'Algo salio mal!',
-            text: 'Por favor ingrese su nombre!',
-            footer: '<a href="">Que esta sucediendo?</a>'
-        })
-    }
-    if(correo.value === null || correo.value === ""){
-        Swal.fire({
-            icon: 'error',
-            title: 'Algo salio mal!',
-            text: 'Por favor ingrese su nombre!',
-            footer: '<a href="">Que esta sucediendo?</a>'
-        })
-    }
-    if(password.value === null || password.value === ""){
-        Swal.fire({
-            icon: 'error',
-            title: 'Algo salio mal!',
-            text: 'Por favor ingrese su nombre!',
-            footer: '<a href="">Que esta sucediendo?</a>'
-        })
-    }
-    if(file.value === null || file.value === ""){
-        Swal.fire({
-            icon: 'error',
-            title: 'Algo salio mal!',
-            text: 'Por favor ingrese su nombre!',
-            footer: '<a href="">Que esta sucediendo?</a>'
-        })
-    }
-    
-    
-    return false;
 }
-
