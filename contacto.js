@@ -43,7 +43,6 @@ const contraseña = document.getElementById("password");
 const fila = document.getElementById("file");
 
 function enviarFormulario(){
-    
     if(nombre.value === null || nombre.value === ""){
         Swal.fire({
             icon: 'error',
