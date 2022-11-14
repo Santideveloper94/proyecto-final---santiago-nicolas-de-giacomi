@@ -19,7 +19,6 @@ archivo.js
 
 ### Images ###
 # JPEG
-*.jpeg
 *.jpe
 *.jif
 *.jfif
@@ -46,9 +45,6 @@ archivo.js
 
 # Web P
 *.webp
-
-# Portable Network Graphics
-*.png
 
 # Animated Portable Network Graphics
 *.apng
