@@ -49,7 +49,7 @@ const validarFormulario = () => {
             title: 'Algo salio mal',
             text: 'Debes completar todos los campos!',
             footer: '<a href="">Porque tengo este problema?</a>'
-        })
+        }) 
     } else{
         let usuario = {
             nombre: nombre,
