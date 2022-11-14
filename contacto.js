@@ -41,8 +41,9 @@ const validarFormulario = () => {
     let telefono = document.getElementById("telefono");
     let correo = document.getElementById("correo");
     let contraseña = document.getElementById("contraseña");
-    let fila = document.getElementById("file");
-    if(nombre == "" || !isNaN(nombre) || nombre == null || apellido == "" || !isNaN(apellido) || apellido == null || telefono == "" || telefono == "" || correo == "" || !isNaN(correo) || correo == null || contraseña == "" || contraseña == null || fila == "" || !isNaN(fila) || fila == null) {
+    let fila = document.getElementById("fila");
+    let areaTexto = document.getElementById("areaDeTexto");
+    if(nombre == "" || !isNaN(nombre) || nombre == null || apellido == "" || !isNaN(apellido) || apellido == null || telefono == "" || telefono == "" || correo == "" || !isNaN(correo) || correo == null || contraseña == "" || contraseña == null || fila == "" || fila == null || areaTexto == "" || !isNaN(areaTexto) || areaTexto == null) {
         Swal.fire({
             icon: 'error',
             title: 'Algo salio mal',
@@ -57,6 +58,7 @@ const validarFormulario = () => {
             correo: correo,
             contraseña: contraseña,
             fila: fila,
+            areaTexto: areaTexto,
         };
         const objetoUsuario = JSON.stringify(usuario);
         localStorage.setItem(objetoUsuario);
