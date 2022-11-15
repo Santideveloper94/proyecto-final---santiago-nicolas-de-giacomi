@@ -36,20 +36,20 @@ function contactarAsesora(){
 }
 //Validacion del formulario de la pagina contactos.
 const validarFormulario = () => {
-    let nombre = document.getElementById("nombre");
-    let apellido = document.getElementById("apellido");
-    let telefono = document.getElementById("telefono");
-    let correo = document.getElementById("correo");
-    let contraseña = document.getElementById("contraseña");
-    let fila = document.getElementById("fila");
-    let areaTexto = document.getElementById("areaDeTexto");
+    let nombre = document.getElementById("nombre").value;
+    let apellido = document.getElementById("apellido").value;
+    let telefono = document.getElementById("telefono").value;
+    let correo = document.getElementById("correo").value;
+    let contraseña = document.getElementById("password").value;
+    let fila = document.getElementById("fila").value;
+    let areaTexto = document.getElementById("areaDeTexto").value;
     if(nombre == "" || !isNaN(nombre) || nombre == null || apellido == "" || !isNaN(apellido) || apellido == null || telefono == "" || telefono == "" || correo == "" || !isNaN(correo) || correo == null || contraseña == "" || contraseña == null || fila == "" || fila == null || areaTexto == "" || !isNaN(areaTexto) || areaTexto == null) {
         Swal.fire({
             icon: 'error',
             title: 'Algo salio mal',
             text: 'Debes completar todos los campos!',
             footer: '<a href="">Porque tengo este problema?</a>'
-        }) 
+        })
     } else{
         let usuario = {
             nombre: nombre,
