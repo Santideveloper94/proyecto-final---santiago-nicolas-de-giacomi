@@ -1,0 +1,37 @@
+[{
+    "id":2233, 
+    "marca": "Volvo", 
+    "imagen":"../imagenes/volvoBlanco.jpg",
+    "modelo": "C30", 
+    "color": "Blanco", 
+    "precio": 20000000, 
+    "anio": 2010
+},
+{
+    "id":1155, 
+    "marca": "Porsche", 
+    "imagen": "../imagenes/porschecayenne.jpg",
+    "modelo": "Cayenne", 
+    "color": "Gris Metalico", 
+    "precio": 30000000, 
+    "anio": 2016
+},
+{
+    "id":5555, 
+    "marca": "Ford",
+    "imagen": "../imagenes/fordmustang.jpg", 
+    "modelo": "Mustang", 
+    "color": "Azul Metalico", 
+    "precio": 40000000, 
+    "anio": 2005
+},
+{
+    "id":2678, 
+    "marca": "Mazda", 
+    "imagen": "../imagenes/mazdarx7.jpg",
+    "modelo": "rx7", 
+    "color": "Negro", 
+    "precio": 15000000, 
+    "anio": 1998
+}
+]
