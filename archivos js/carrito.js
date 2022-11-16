@@ -73,12 +73,12 @@ function agregarAlCarrito(vehiculoComprado){
         })
         document.getElementById("tablaBody").innerHTML += `
         <tr>
-        <td>${vehiculoComprado.id}</td>
-        <td>${vehiculoComprado.marca}</td>
-        <td>${vehiculoComprado.modelo}</td>
-        <td>$ ${vehiculoComprado.precio}</td>
-        <td>${vehiculoComprado.color}</td>
-        <td>${vehiculoComprado.anio}</td>                
+        <td>${vehiculo.id}</td>
+        <td>${vehiculo.marca}</td>
+        <td>${vehiculo.modelo}</td>
+        <td>$ ${vehiculo.precio}</td>
+        <td>${vehiculo.color}</td>
+        <td>${vehiculo.anio}</td>                
     </tr>
     `;
     totalCarrito = carrito.reduce((acumulador,vehiculo) => acumulador + vehiculo.precio,0 );
@@ -109,7 +109,6 @@ function eliminar(ev){
 }
 
 //obtiene valor del dolar
-
 function obtenerDolar(){
     const URLDOLAR = "https://api.bluelytics.com.ar/v2/latest";
     fetch(URLDOLAR)
