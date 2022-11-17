@@ -67,10 +67,10 @@
         Swal.fire({
             title: vehiculoComprado.marca,
             text: 'Agregado al carrito',
-            imageUrl: productoComprado.imagen,
+            imageUrl: vehiculoComprado.imagen,
             imageWidth: 200,
             imageHeight: 200,
-            imageAlt: productoComprado.modelo,
+            imageAlt: vehiculoComprado.modelo,
             showConfirmButton: false,
             timer: 1500
         })
