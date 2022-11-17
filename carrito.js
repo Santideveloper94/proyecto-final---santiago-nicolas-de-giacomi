@@ -61,9 +61,6 @@
 
     function agregarAlCarrito(vehiculoComprado){
         carrito.push(vehiculoComprado);
-        console.table(carrito);
-        //alert("Producto: "+productoComprado.nombre+" agregado al carrito!");
-        //sweet alert
         Swal.fire({
             title: vehiculoComprado.marca,
             text: 'Agregado al carrito',
