@@ -35,7 +35,7 @@
     }
 
     function renderizarVehiculos(){
-        for(const vehiculo of productosJSON){
+        for(const vehiculo of vehiculosJSON){
             contenedor.innerHTML += `
             <div class="card col-sm-2">
             <img src="${vehiculo.imagen}" class="card-img-top" alt="${vehiculo.anio}">
@@ -51,7 +51,7 @@
         }
 
         //EVENTOS
-        productosJSON.forEach(vehiculo => {
+        vehiculosJSON.forEach(vehiculo => {
             //evento para cada boton
             document.getElementById(`btn${vehiculo.id}`).addEventListener("click",function(){
                 agregarAlCarrito(vehiculo);
@@ -61,6 +61,7 @@
 
     function agregarAlCarrito(vehiculoComprado){
         carrito.push(vehiculoComprado);
+        console.table(carrito);
         Swal.fire({
             title: vehiculoComprado.marca,
             text: 'Agregado al carrito',
@@ -91,16 +92,21 @@
 
     //Para eliminar prods del carro
     function eliminar(ev){
+        console.log(ev);
         let fila = ev.target.parentElement.parentElement;
+        console.log(fila);
         let id = fila.children[0].innerText;
+        console.log(id);
         let indice = carrito.findIndex(vehiculo => vehiculo.id == id);
+        console.log(indice)
         //remueve el producto del carro
         carrito.splice(indice,1);
+        console.table(carrito);
         //remueve la fila de la tabla
         fila.remove();
         //recalcular el total
-        let preciosAcumulados = carrito.reduce((acumulador,vehiculo)=>acumulador+vehiculo.precio,0);
-        total.innerText="Total a pagar $: "+preciosAcumulados;
+        let Acumulados = carrito.reduce((acumulador,vehiculo)=>acumulador+vehiculo.precio,0);
+        total.innerText="Total a pagar $: "+Acumulados;
         //storage
         localStorage.setItem("carrito",JSON.stringify(carrito));
     }
@@ -112,6 +118,7 @@
             .then( respuesta => respuesta.json())
             .then( cotizaciones => {
                 const dolarBlue = cotizaciones.blue;
+                console.log(dolarBlue);
                 document.getElementById("api_dolar").innerHTML+=`
                     <p>Dolar compra: $ ${dolarBlue.value_buy} Dolar venta: $ ${dolarBlue.value_sell}</p>
                 `;
@@ -120,9 +127,9 @@
             })
     }
 
-    //GETJSON de productos.json
+    //GETJSON de vehiculos.json
     async function obtenerJSON() {
-        const URLJSON="vehiculos.json";
+        const URLJSON="../vehiculos.json";
         const resp = await fetch(URLJSON);
         const data = await resp.json();
         productosJSON = data;
