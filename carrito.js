@@ -17,7 +17,7 @@
 
     function miTabla(){
         for(const vehiculo of carrito){
-            document.getElementById("tablabody").innerHTML += `
+            document.getElementById("tablaBody").innerHTML += `
             <tr>
                 <<td>${vehiculo.id}</td>
                 <td>${vehiculo.marca}</td>
@@ -72,7 +72,7 @@
             showConfirmButton: false,
             timer: 1500
         })
-        document.getElementById("tablabody").innerHTML += `
+        document.getElementById("tablaBody").innerHTML += `
         <>
         <td>${vehiculoComprado.id}</td>
         <td>${vehiculoComprado.marca}</td>
