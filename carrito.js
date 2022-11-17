@@ -11,9 +11,8 @@
     (carrito.length != 0)&&miTabla();
     obtenerDolar();
 
-    //LUXON
+
     const DateTime = luxon.DateTime;
-    //momento en que se ingresa a la web
     const ahora = DateTime.now();
 
     function miTabla(){
@@ -66,23 +65,23 @@
         //alert("Producto: "+productoComprado.nombre+" agregado al carrito!");
         //sweet alert
         Swal.fire({
-            title: vehiculoComprado.nombre,
+            title: vehiculoComprado.marca,
             text: 'Agregado al carrito',
-            imageUrl: productoComprado.foto,
+            imageUrl: productoComprado.imagen,
             imageWidth: 200,
             imageHeight: 200,
-            imageAlt: productoComprado.nombre,
+            imageAlt: productoComprado.modelo,
             showConfirmButton: false,
             timer: 1500
         })
         document.getElementById("tablabody").innerHTML += `
         <>
-        <td>${vehiculoAComprar.id}</td>
-        <td>${vehiculoAComprar.marca}</td>
-        <td>${vehiculoAComprar.modelo}</td>
-        <td>$ ${vehiculoAComprar.precio}</td>
-        <td>${vehiculoAComprar.color}</td>
-        <td>${vehiculoAComprar.anio}</td>                
+        <td>${vehiculoComprado.id}</td>
+        <td>${vehiculoComprado.marca}</td>
+        <td>${vehiculoComprado.modelo}</td>
+        <td>$ ${vehiculoComprado.precio}</td>
+        <td>${vehiculoComprado.color}</td>
+        <td>${vehiculoComprado.anio}</td>                
         <td><button class="btn btn-light" onclick="eliminar(event)">🗑️</button></td>
             </tr>
         `;
@@ -95,16 +94,11 @@
 
     //Para eliminar prods del carro
     function eliminar(ev){
-        console.log(ev);
         let fila = ev.target.parentElement.parentElement;
-        console.log(fila);
         let id = fila.children[0].innerText;
-        console.log(id);
         let indice = carrito.findIndex(vehiculo => vehiculo.id == id);
-        console.log(indice)
         //remueve el producto del carro
         carrito.splice(indice,1);
-        console.table(carrito);
         //remueve la fila de la tabla
         fila.remove();
         //recalcular el total
@@ -121,7 +115,6 @@
             .then( respuesta => respuesta.json())
             .then( cotizaciones => {
                 const dolarBlue = cotizaciones.blue;
-                console.log(dolarBlue);
                 document.getElementById("api_dolar").innerHTML+=`
                     <p>Dolar compra: $ ${dolarBlue.value_buy} Dolar venta: $ ${dolarBlue.value_sell}</p>
                 `;
