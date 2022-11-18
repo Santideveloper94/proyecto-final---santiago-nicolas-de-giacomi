@@ -4,7 +4,7 @@
     "imagen":"../imagenes/volvoBlanco.jpg",
     "modelo": "C30", 
     "color": "Blanco", 
-    "precio": 20000000, 
+    "precio": 30000, 
     "anio": 2010
 },
 {
@@ -13,7 +13,7 @@
     "imagen": "../imagenes/porschecayenne.jpg",
     "modelo": "Cayenne", 
     "color": "Gris Metalico", 
-    "precio": 3000000, 
+    "precio": 60000, 
     "anio": 2016
 },
 {
@@ -22,7 +22,7 @@
     "imagen": "../imagenes/fordmustang.jpg", 
     "modelo": "Mustang", 
     "color": "Azul Metalico", 
-    "precio": 40000000, 
+    "precio": 80000, 
     "anio": 2005
 },
 {
@@ -31,7 +31,7 @@
     "imagen": "../imagenes/mazdarx7.jpg",
     "modelo": "rx7", 
     "color": "Negro", 
-    "precio": 15000000, 
+    "precio": 20000, 
     "anio": 1998
 }
 ]
