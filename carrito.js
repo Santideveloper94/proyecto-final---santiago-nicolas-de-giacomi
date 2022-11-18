@@ -9,7 +9,6 @@
     
     (carrito.length != 0)&&miTabla();
 
-
     const DateTime = luxon.DateTime;
     const ahora = DateTime.now();
 
@@ -107,7 +106,6 @@
         localStorage.setItem("carrito",JSON.stringify(carrito));
     }
 
-
     //Cerrando al compra
     botonFinalizar.onclick = () => {
         if(carrito.length==0){
@@ -127,9 +125,9 @@
                 text: "Aguarde y recibirá un email para confirmar la compra",
                 duration: 3000,
                 gravity: 'bottom',
-                position: 'left',
+                position: 'right',
                 style: {
-                    background: 'linear-gradient(to right, lightgreen, black)'
+                    background: 'linear-gradient(to right, red, black)'
                 }
             }).showToast();
 
